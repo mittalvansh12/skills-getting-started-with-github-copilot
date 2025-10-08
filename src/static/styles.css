@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-}
 
 body {
   font-family: Arial, sans-serif;
@@ -159,11 +158,30 @@ footer {
 }
 
 .participants-list {
-  list-style-type: disc;
-  margin-left: 20px;
+  list-style-type: none;
+  margin-left: 0;
   margin-bottom: 0;
   color: #333;
   font-size: 15px;
+  padding-left: 0;
+  }
+
+  .participant-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .delete-icon {
+    cursor: pointer;
+    color: #c62828;
+    margin-left: 6px;
+    font-size: 18px;
+    transition: color 0.2s;
+  }
+  .delete-icon:hover {
+    color: #b71c1c;
+  }
 }
 
 .no-participants {
